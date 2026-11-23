@@ -126,7 +126,7 @@ def draw():
 
     if state != "playing":
         screen.blit(big_result.render("БАЯР ХҮРГЭЕ!" if state == "won" else "ТА ЯЛАГДЛАА!", True, GREEN if state == "won" else RED), (60, 120))
-        screen.blit(font.render(f"Таны оноо: {score}", True, WHITE), (60, 260))
+        screen.blit(font.render(f"Таны оноо: {score}", True, WHITE), (60, 240))
         screen.blit(font.render("R - дахин тоглох", True, WHITE), (60, 290))
 
     pygame.display.flip()
